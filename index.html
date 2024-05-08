@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="weather">
+
+        <img src="" alt="">
+        <div class="main">
+            <div class="srch">
+
+                <div class="navbar">
+                    <div>
+                        <input class="city" type="text" placeholder="  City" value="">
+                        <button class="set" onclick="getWeatherData()">SET</button>
+                    </div>
+                    <div class="time">
+                        
+                    </div>
+                    <!-- <div>
+                        <div>
+                            <img src="image/time.svg" alt="">
+                        </div>
+                        <div>
+                            <span class="showtime">08:20:30</span>
+                        </div>
+                    </div> -->
+                   
+
+
+                </div>
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <img class="icon1" src="image/weather.png" alt="image">
+                </div>
+
+                <div class="w_text">
+                    <h2 class="c_state">Clear</h2>
+                    <h5 class="c_address">-</h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="data">
+            <div class="c_humidity">
+                <span class="label">HUMIDITY</span><br>
+                <span class="humid w_data">-</span>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="c_temperature">
+                <span class="label">TEMPERATURE</span><br> <!-- Fixed heading to Temperature -->
+                <span class="temperature w_data">-</span>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="c_wind">
+                <span class="label">WIND</span><br> <!-- Fixed heading to Wind -->
+                <span class="wind w_data">-</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+<script src="app.js"></script>
+
+</html>
